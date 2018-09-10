@@ -12,6 +12,14 @@ Each JSON entry needs a unique identifier. As this is a news syndication protoco
   "http://example.com/article/5014":{}
 }
 ```
+## Article Updates
+For revisioning or version updates one should place a version variable in the URL.
+
+```
+{
+  "http://example.com/article/5014?version=2":{}
+}
+```
 
 ## Sub-keys
 Here's where we get into the nitty-gritty. The following sub-keys (and their explanations) are standard in JOSS. All keys should be in lower-case and all readers should be case-agnostic (for the programmers who don't read this).
